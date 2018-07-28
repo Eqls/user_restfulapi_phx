@@ -6,6 +6,7 @@ defmodule UserRestfulapiPhx.Accounts.User do
   schema "users" do
     field(:email, :string)
     field(:password_hash, :string)
+    field(:role, :string)
     # Virtual fields:
     field(:password, :string, virtual: true)
     field(:password_confirmation, :string, virtual: true)

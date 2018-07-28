@@ -26,6 +26,8 @@ config :user_restfulapi_phx, UserRestfulapiPhx.Guardian,
   issuer: "user_restfulapi_phx",
   secret_key: "4/4xsvduZQqjYfkzaKv0stb4k/bJ86TTJitZuH988eTA9/7jBTj6vOlgfEyHUnZo"
 
+config :stripity_stripe, api_key: "sk_test_TwjeYYui4of25M1zRNORb0mY"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

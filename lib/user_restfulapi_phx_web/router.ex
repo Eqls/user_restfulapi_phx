@@ -34,6 +34,7 @@ defmodule UserRestfulapiPhxWeb.Router do
 
     get("/my_user", UserController, :show)
     put("/update_profile", UserController, :update_profile)
+    resources("/stripe", UserController, only: [:create, :delete])
   end
 
   # Other scopes may use custom stacks.
