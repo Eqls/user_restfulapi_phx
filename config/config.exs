@@ -11,7 +11,7 @@ config :user_restfulapi_phx,
 
 # Configures the endpoint
 config :user_restfulapi_phx, UserRestfulapiPhxWeb.Endpoint,
-  url: [host: "localhost"],
+  url: [host: "35.204.211.118"],
   secret_key_base: "807jaizJ6mY8y8yc+PZLPpkWzT/MTX3VTh/s6NJNJV9k9HTSd0moUfCPDfpz2cRF",
   render_errors: [view: UserRestfulapiPhxWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: UserRestfulapiPhx.PubSub, adapter: Phoenix.PubSub.PG2]
