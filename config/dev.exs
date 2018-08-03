@@ -50,7 +50,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :user_restfulapi_phx, UserRestfulapiPhx.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "admin",
+  username: "postgres",
   password: "postgres",
   database: "user_restfulapi_phx_dev",
   hostname: "localhost",
