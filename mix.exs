@@ -45,7 +45,8 @@ defmodule UserRestfulapiPhx.Mixfile do
       {:bcrypt_elixir, "~> 1.0"},
       {:guardian, "~> 1.0"},
       {:stripity_stripe, "~> 2.0"},
-      {:corsica, "~> 1.0"}
+      {:corsica, "~> 1.0"},
+      {:distillery, "~> 1.5", runtime: false}
     ]
   end
 
