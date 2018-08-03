@@ -14,6 +14,10 @@ defmodule UserRestfulapiPhxWeb.UserView do
     %{id: user.id, email: user.email, password_hash: user.password_hash}
   end
 
+  def render("userjwt.json", %{user: user, jwt: jwt}) do
+    %{id: user.id, email: user.email, token: jwt}
+  end
+
   def render("jwt.json", %{jwt: jwt}) do
     %{token: jwt}
   end

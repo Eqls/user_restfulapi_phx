@@ -1,6 +1,6 @@
 defmodule UserRestfulapiPhxWeb.StripeController do
   use UserRestfulapiPhxWeb, :controller
-  action_fallback(MyApiWeb.FallbackController)
+  action_fallback(UserRestfulapiPhxWeb.FallbackController)
 
   def create(conn, %{
         "description" => description,

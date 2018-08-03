@@ -21,20 +21,18 @@ defmodule UserRestfulapiPhxWeb.Router do
 
   scope "/api", UserRestfulapiPhxWeb do
     # Use the default browser stack
-    pipe_through(:browser)
+    pipe_through(:api)
 
-    resources("/users", UserController, only: [:index, :update])
     post("/sign_up", UserController, :create)
     post("/sign_in", UserController, :sign_in)
-    # get("/", PageController, :index)
+    resources("/stripe", StripeController, only: [:create, :delete])
   end
 
   scope "/api", UserRestfulapiPhxWeb do
     pipe_through([:api, :jwt_authenticated])
 
-    get("/my_user", UserController, :show)
-    put("/update_profile", UserController, :update_profile)
-    resources("/stripe", UserController, only: [:create, :delete])
+    put("/users", UserController, :update)
+    get("/current_user", UserController, :show)
   end
 
   # Other scopes may use custom stacks.

@@ -45,6 +45,7 @@ defmodule UserRestfulapiPhxWeb.Endpoint do
     signing_salt: "mTLuTRLq"
   )
 
+  plug(Corsica, origins: "*", allow_headers: ["Accept", "Content-Type", "Authorization"])
   plug(UserRestfulapiPhxWeb.Router)
 
   @doc """

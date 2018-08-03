@@ -10,7 +10,7 @@ defmodule UserRestfulapiPhx.Accounts do
   alias UserRestfulapiPhx.Accounts.User
 
   ## Returns an user based on its email
-  defp get_by_email(email) when is_binary(email) do
+  def get_by_email(email) when is_binary(email) do
     case Repo.get_by(User, email: email) do
       nil ->
         dummy_checkpw()
