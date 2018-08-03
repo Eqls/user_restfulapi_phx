@@ -27,7 +27,7 @@ environment :dev do
   # It is recommended that you build with MIX_ENV=prod and pass
   # the --env flag to Distillery explicitly if you want to use
   # dev mode.
-  set(dev_mode: false)
+  set(dev_mode: true)
   set(include_erts: false)
   set(cookie: :"ViRk*Ip`&:KzQ:;d}0XmS.py:q>X7g=$<c_roC*1YoS}is^bl>q%Z&Cv=Rkdf2c%")
 end

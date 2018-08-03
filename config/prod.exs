@@ -15,7 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :user_restfulapi_phx, UserRestfulapiPhxWeb.Endpoint,
   load_from_system_env: true,
-  url: [host: "http://35.204.211.118/", port: 4000],
+  url: [host: "http://35.204.211.118", port: 4000],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production
