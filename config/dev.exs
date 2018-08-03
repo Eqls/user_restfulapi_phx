@@ -9,7 +9,7 @@ use Mix.Config
 config :user_restfulapi_phx, UserRestfulapiPhxWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
-  code_reloader: true,
+  code_reloader: false,
   check_origin: false,
   watchers: [],
   server: true
