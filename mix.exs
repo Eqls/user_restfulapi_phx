@@ -46,7 +46,7 @@ defmodule UserRestfulapiPhx.Mixfile do
       {:guardian, "~> 1.0"},
       {:stripity_stripe, "~> 2.0"},
       {:corsica, "~> 1.0"},
-      {:distillery, "~> 1.5", runtime: false}
+      {:distillery, "~> 2.0.0-rc.11", runtime: false}
     ]
   end
 
